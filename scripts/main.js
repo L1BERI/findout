@@ -77,6 +77,7 @@ $(function () {
 
   $(".rating").rateYo({
     rating: 3.6,
+    readOnly: true,
     spacing: '6px',
     starWidth: "13px",
 
@@ -98,13 +99,6 @@ $(function () {
   })
 
   setInterval(() => {
-    if ($(window).scrollTop() > 0) {
-      $('.header__top').addClass('header__top--shadow')
-    } else {
-      $('.header__top').removeClass('header__top--shadow')
-    }
-  }, 0);
-  setInterval(() => {
     if ($('.overlay').hasClass('overlay--visible')) {
       $('body').css('overflow', 'hidden')
     } else {
@@ -122,9 +116,6 @@ $(function () {
     $('.overlay').toggleClass('overlay--visible')
   }
   })
-
-
-
 })
 
 
