@@ -1,4 +1,4 @@
-
+alert('Некоторые картинки перестали подгружаться, хотя на локалке всё ок');
 $(function () {
   
   $('.content-cards__link').on('click', function (e) {
