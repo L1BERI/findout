@@ -206,7 +206,7 @@
     height: 44px;
     border-radius: 50%;
     display: block;
-    background: url(../../content/logos/logo-play.svg) center no-repeat, #fff;
+    background: url("./../../content/logos/logo-play.svg") center no-repeat, #fff;
   }
 }
 
@@ -672,7 +672,7 @@
   width: 16px;
   height: 18px;
   display: block;
-  background: url(../../content/logos/logo-dollars.svg) center no-repeat;
+  background: url("./../../content/logos/logo-dollars.svg") center no-repeat;
 }
 
 .featured__slider-address::before {
@@ -680,7 +680,7 @@
   width: 16px;
   height: 18px;
   display: block;
-  background: url(../../content/logos/logo-marker.svg) center no-repeat;
+  background: url("./../../content/logos/logo-marker.svg") center no-repeat;
 }
 
 .featured__slider-btns {
@@ -837,7 +837,7 @@
   width: 47px;
   height: 46px;
   display: block;
-  background: url(../../content/logos/dots.svg);
+  background: url('./../../content/logos/dots.svg');
   position: absolute;
   left: 0;
   bottom: 56px;
@@ -1140,7 +1140,7 @@
   height: 16px;
   display: block;
   border-radius: 50%;
-  background: url(../../content/logos/check.svg);
+  background: url("./../../content/logos/check.svg");
 }
 
 
