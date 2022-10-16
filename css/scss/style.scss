@@ -521,6 +521,9 @@
 .featured {
   padding-top: 59.5px;
   padding-bottom: 59.5px;
+  .container{
+    overflow: hidden;
+  }
 }
 
 
