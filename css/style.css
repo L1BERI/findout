@@ -47,13 +47,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 36px 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__top-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__top-nav {
@@ -1874,7 +1877,6 @@
 }
 @media screen and (max-width: 1000px) {
   .burger {
-    height: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1891,7 +1893,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: transparent;
     position: fixed;
     top: 15px;
     left: 30px;
@@ -2061,6 +2062,9 @@
     z-index: 100;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    height: auto;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   .header__top--shadow {
@@ -2070,23 +2074,11 @@
             box-shadow: 0px 0px 5px #333;
   }
 
-  .header__top-nav {
-    display: none;
-  }
-
-  .search-container {
-    display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-right: 0;
-  }
-
   .header__top-btns {
-    display: none;
+    line-height: 1;
   }
 
-  .top-nav__list {
+  .header__top-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2094,6 +2086,26 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+
+  .header__top--active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+
+  .header__top-nav .top-nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
   }
 
   .header__body {
