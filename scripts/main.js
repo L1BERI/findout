@@ -1,5 +1,6 @@
+alert("Забыл в отчёте сказать - некоторые фотки не подгружаются, хотя на локалке работало всё");
 $(function () {
-
+  
   $('.content-cards__link').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('accor-list__link--active')) {
