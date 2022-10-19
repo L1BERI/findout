@@ -4,6 +4,13 @@ const myAtropos = Atropos({
 });
 $(function () {
 
+  $('.message-btn').on('click', function (e) {
+    e.preventDefault();
+    if(!($('.message').hasClass('message-close'))){
+      $('.message').addClass('message-close');
+    }
+  })
+
   $('.content-cards__link').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('accor-list__link--active')) {
