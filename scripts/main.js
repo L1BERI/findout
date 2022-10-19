@@ -1,6 +1,9 @@
-
+const myAtropos = Atropos({
+  el: '.my-atropos',
+  shadow: false,
+});
 $(function () {
-  
+
   $('.content-cards__link').on('click', function (e) {
     e.preventDefault()
     if ($(this).hasClass('accor-list__link--active')) {
@@ -18,11 +21,7 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   })
 
-
-
-
-
-
+  
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,
@@ -106,16 +105,16 @@ $(function () {
       $('body').css('overflow', 'visible')
     }
   }, 0);
-  
+
 
 
   $('.overlay, .header__top-nav').on('click', function (e) {
     e.preventDefault()
-    if($('.burger').hasClass('burger--active')){
-    $('.burger').toggleClass('burger--active')
-    $('.header__top').toggleClass('header__top--active')
-    $('.overlay').toggleClass('overlay--visible')
-  }
+    if ($('.burger').hasClass('burger--active')) {
+      $('.burger').toggleClass('burger--active')
+      $('.header__top').toggleClass('header__top--active')
+      $('.overlay').toggleClass('overlay--visible')
+    }
   })
 })
 

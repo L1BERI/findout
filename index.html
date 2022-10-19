@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./atropos/atropos.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,11 +27,11 @@
   <div class="wrapper">
     <div class="overlay"></div>
     <header class="header">
-        <a href="#" class="burger">
-          <span class="up"></span>
-          <span class="mid"></span>
-          <span class="bot"></span>
-        </a>
+      <a href="#" class="burger">
+        <span class="up"></span>
+        <span class="mid"></span>
+        <span class="bot"></span>
+      </a>
       <div class="container">
         <div class="header__top">
           <div class="header__logo-box">
@@ -117,9 +118,22 @@
               </a>
             </div>
           </div>
-          <div class="header__body-image">
-            <img src="content/header/full-image.png" class="body-image">
-          </div>
+         <div class="header__body-image">
+            <div class="atropos my-atropos">
+              <!-- scale container (required) -->
+              <div class="atropos-scale">
+                <!-- rotate container (required) -->
+                <div class="atropos-rotate">
+                  <!-- inner container (required) -->
+                  <div class="atropos-inner" >
+                    <img class="girl"g src="content/header/image-girl.png" data-atropos-offset="0" style="width: 100%; height: 100%" alt="">
+                    <img class="circles" src="content/header/big-circles.svg"  data-atropos-offset="-5" alt="">
+                    <img class="figures" src="content/header/figures.svg" data-atropos-offset="5" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
         </div>
       </div>
     </header>
@@ -861,8 +875,9 @@
               </ul>
             </div>
             <div class="works__video">
-                <div class="video-wrapper">
-                  <img src="content/preview.jpg" alt=""></div>
+              <div class="video-wrapper">
+                <img src="content/preview.jpg" alt="">
+              </div>
               <a data-fancybox data-type="video" href="https://www.youtube.com/watch?v=qoDPvFAk2Vg" class="button-play">
                 <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -968,13 +983,13 @@
                     <p class="featured__slider-address">London,Enlend <a href="#" class="map">View map</a></p>
                   </div>
                   <div class="featured__slider-btns">
-                    <a href="#" class="slider-btns__heart">
+                    <div class="slider-btns__heart">
                       <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.6996 1.83963C-0.567639 4.29254 -0.565429 8.23975 1.6996 10.6948L11.7332 21.5754C15.0816 17.9528 18.4302 14.33 21.7788 10.7072C24.046 8.25431 24.046 4.30483 21.7788 1.85209C19.5115 -0.600819 15.8608 -0.601046 13.5939 1.85209L11.7452 3.85219L9.88498 1.83968C7.61774 -0.613227 3.96701 -0.613227 1.70011 1.83968L1.6996 1.83963Z"
                           fill="white" />
                       </svg>
-                    </a>
+                    </div>
                     <a href="#" class="slider-btns__apply">Apply Now</a>
                   </div>
                 </div>
@@ -991,13 +1006,13 @@
                     <p class="featured__slider-address">London,Enlend <a href="#" class="map">View map</a></p>
                   </div>
                   <div class="featured__slider-btns">
-                    <a href="#" class="slider-btns__heart">
+                    <div class="slider-btns__heart">
                       <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.6996 1.83963C-0.567639 4.29254 -0.565429 8.23975 1.6996 10.6948L11.7332 21.5754C15.0816 17.9528 18.4302 14.33 21.7788 10.7072C24.046 8.25431 24.046 4.30483 21.7788 1.85209C19.5115 -0.600819 15.8608 -0.601046 13.5939 1.85209L11.7452 3.85219L9.88498 1.83968C7.61774 -0.613227 3.96701 -0.613227 1.70011 1.83968L1.6996 1.83963Z"
                           fill="white" />
                       </svg>
-                    </a>
+                    </div>
                     <a href="#" class="slider-btns__apply">Apply Now</a>
                   </div>
                 </div>
@@ -1014,13 +1029,13 @@
                     <p class="featured__slider-address">London,Enlend <a href="#" class="map">View map</a></p>
                   </div>
                   <div class="featured__slider-btns">
-                    <a href="#" class="slider-btns__heart">
+                    <div class="slider-btns__heart">
                       <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.6996 1.83963C-0.567639 4.29254 -0.565429 8.23975 1.6996 10.6948L11.7332 21.5754C15.0816 17.9528 18.4302 14.33 21.7788 10.7072C24.046 8.25431 24.046 4.30483 21.7788 1.85209C19.5115 -0.600819 15.8608 -0.601046 13.5939 1.85209L11.7452 3.85219L9.88498 1.83968C7.61774 -0.613227 3.96701 -0.613227 1.70011 1.83968L1.6996 1.83963Z"
                           fill="white" />
                       </svg>
-                    </a>
+                    </div>
                     <a href="#" class="slider-btns__apply">Apply Now</a>
                   </div>
                   </p>
@@ -1038,13 +1053,13 @@
                     <p class="featured__slider-address">London,Enlend <a href="#" class="map">View map</a></p>
                   </div>
                   <div class="featured__slider-btns">
-                    <a href="#" class="slider-btns__heart">
+                    <div class="slider-btns__heart">
                       <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.6996 1.83963C-0.567639 4.29254 -0.565429 8.23975 1.6996 10.6948L11.7332 21.5754C15.0816 17.9528 18.4302 14.33 21.7788 10.7072C24.046 8.25431 24.046 4.30483 21.7788 1.85209C19.5115 -0.600819 15.8608 -0.601046 13.5939 1.85209L11.7452 3.85219L9.88498 1.83968C7.61774 -0.613227 3.96701 -0.613227 1.70011 1.83968L1.6996 1.83963Z"
                           fill="white" />
                       </svg>
-                    </a>
+                    </div>
                     <a href="#" class="slider-btns__apply">Apply Now</a>
                   </div>
                 </div>
@@ -1531,6 +1546,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
   integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./atropos/atropos.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
