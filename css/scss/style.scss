@@ -17,7 +17,33 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-
+.z1{
+  position: relative;
+}
+.z2, .z3, .z4, .z5, .z6{
+  position: absolute;
+}
+.z2{
+  transform: translateZ(-3px);
+}
+.z3{
+  transform: translateZ(-5px);
+}
+.z4{
+  transform: translateZ(-7px);
+}
+.z5{
+  transform: translateZ(-9px);
+}
+.z6{
+  transform: translateZ(-11px);
+}
+.z7{
+  transform: translateZ(-13px);
+}
+.z8{
+  transform: translateZ(-15px);
+}
 .overlay {
   position: fixed;
   width: 400%;
@@ -1455,6 +1481,7 @@
       content: none;
     }
   }
+
 
   .featured__btns-box {
     margin-top: 40px;

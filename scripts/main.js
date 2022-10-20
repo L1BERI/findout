@@ -1,6 +1,12 @@
 const myAtropos = Atropos({
   el: '.my-atropos',
   shadow: false,
+  alwaysActive: true,
+});
+const myAtroposs = Atropos({
+  el: '.my-atroposs',
+  shadow: false,
+  alwaysActive: true,
 });
 $(function () {
 

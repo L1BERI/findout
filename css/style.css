@@ -17,6 +17,49 @@
   margin: 0 auto;
 }
 
+.z1 {
+  position: relative;
+}
+
+.z2, .z3, .z4, .z5, .z6 {
+  position: absolute;
+}
+
+.z2 {
+  -webkit-transform: translateZ(-3px);
+          transform: translateZ(-3px);
+}
+
+.z3 {
+  -webkit-transform: translateZ(-5px);
+          transform: translateZ(-5px);
+}
+
+.z4 {
+  -webkit-transform: translateZ(-7px);
+          transform: translateZ(-7px);
+}
+
+.z5 {
+  -webkit-transform: translateZ(-9px);
+          transform: translateZ(-9px);
+}
+
+.z6 {
+  -webkit-transform: translateZ(-11px);
+          transform: translateZ(-11px);
+}
+
+.z7 {
+  -webkit-transform: translateZ(-13px);
+          transform: translateZ(-13px);
+}
+
+.z8 {
+  -webkit-transform: translateZ(-15px);
+          transform: translateZ(-15px);
+}
+
 .overlay {
   position: fixed;
   width: 400%;
