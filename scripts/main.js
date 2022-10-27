@@ -1,61 +1,34 @@
-const myAtropos = Atropos({
-  el: '.my-atropos',
-  shadow: false,
-  alwaysActive: true,
-});
-const myAtroposs = Atropos({
-  el: '.my-atroposs',
-  shadow: false,
-  alwaysActive: true,
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  })
-})
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
-
-const text = document.querySelectorAll('.header__body-title').innerHTML
-let line = 0;
-let count = 0;
-let result = '';
-function typeLine() {
-  let interval = setTimeout(
-    () => {
-      result += text[line][count]
-      document.querySelectorAll('.header__body-title').innerHTML = result + '|';
 
 
-      count++;
-      if (count >= text[line].length) {
-        count = 0;
-        line++;
-        if (line == text.length) {
-          clearTimeout(interval);
-          document.querySelectorAll('.header__body-title').innerHTML = result;
-          return true;
-        }
+
+  const myAtropos = Atropos({
+    el: '.my-atropos, .my-atroposs',
+    shadow: false,
+    alwaysActive: true,
+  });
+
+  // const myAtroposs = Atropos({
+  //   el: '.my-atroposs',
+  //   shadow: false,
+  //   alwaysActive: true,
+  // });
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
       }
-      typeLine();
-    }, getRandomInt(getRandomInt(250 * 2.5)))
-}
-typeLine();
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
+    })
+  })
+  
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  
 $(function () {
+
 
   $('.message-btn').on('click', function (e) {
     e.preventDefault();

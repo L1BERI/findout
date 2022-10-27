@@ -49,8 +49,8 @@
 
 .hidden-down {
   opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
 }
 
 .show {
@@ -900,6 +900,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 25px;
 }
 
 .featured__heading {
