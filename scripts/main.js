@@ -8,11 +8,58 @@ const myAtroposs = Atropos({
   shadow: false,
   alwaysActive: true,
 });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+const text = document.querySelectorAll('.header__body-title').innerHTML
+let line = 0;
+let count = 0;
+let result = '';
+function typeLine() {
+  let interval = setTimeout(
+    () => {
+      result += text[line][count]
+      document.querySelectorAll('.header__body-title').innerHTML = result + '|';
+
+
+      count++;
+      if (count >= text[line].length) {
+        count = 0;
+        line++;
+        if (line == text.length) {
+          clearTimeout(interval);
+          document.querySelectorAll('.header__body-title').innerHTML = result;
+          return true;
+        }
+      }
+      typeLine();
+    }, getRandomInt(getRandomInt(250 * 2.5)))
+}
+typeLine();
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 $(function () {
 
   $('.message-btn').on('click', function (e) {
     e.preventDefault();
-    if(!($('.message').hasClass('message-close'))){
+    if (!($('.message').hasClass('message-close'))) {
       $('.message').addClass('message-close');
     }
   })
@@ -34,7 +81,7 @@ $(function () {
     $('body,html').animate({ scrollTop: top }, 1000);
   })
 
-  
+
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     loop: true,

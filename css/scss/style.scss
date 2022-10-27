@@ -7,6 +7,11 @@
   min-height: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  overflow-x: hidden;
 }
 .my-atropos {
   width: 320px;
@@ -17,6 +22,37 @@
   padding: 0 15px;
   margin: 0 auto;
 }
+
+// SCROLL ANIMATION
+
+.hidden{
+  opacity: 0;
+}
+
+.hidden-left{
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.hidden-right{
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.hidden-down{
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+
+.show{
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translate(0,0);
+}
+
+
+
 .z1{
   position: relative;
 }

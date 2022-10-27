@@ -4,6 +4,20 @@
   min-height: 100%;
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  overflow-x: hidden;
 }
 
 .my-atropos {
@@ -15,6 +29,36 @@
   max-width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.hidden-left {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.hidden-right {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.hidden-down {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .z1 {
