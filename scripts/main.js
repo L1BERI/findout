@@ -2,16 +2,16 @@
 
 
   const myAtropos = Atropos({
-    el: '.my-atropos, .my-atroposs',
+    el: '.my-atropos',
     shadow: false,
     alwaysActive: true,
   });
 
-  // const myAtroposs = Atropos({
-  //   el: '.my-atroposs',
-  //   shadow: false,
-  //   alwaysActive: true,
-  // });
+  const myAtroposs = Atropos({
+    el: '.my-atroposs',
+    shadow: false,
+    alwaysActive: true,
+  });
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
